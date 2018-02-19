@@ -1,0 +1,116 @@
+body {
+    color: rgb(38,38,38);
+    background-color: rgb(225,225,215);
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13.6px;
+    font-feature-settings: "kern" 1;
+    text-rendering: optimizeLegibility;
+
+    -webkit-touch-callout-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -O-user-select: none;
+}
+
+[role="button"] {
+    -webkit-touch-callout-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -O-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+#container {
+    box-shadow: 2px 0 2px rgba(0,0,0,0.10),
+                -2px 0 2px rgba(0,0,0,0.10);
+}
+header, footer {
+    background-color: #eee;
+    font-family: Roboto, sans-serif;
+}
+header {
+    box-shadow: 0 1px rgba(0,0,0,0.10);
+}
+
+header > div {
+    padding: 6px 16px;
+}
+footer > div
+{
+    padding: 10px 19px;
+}
+
+input {
+    background-color: #fff;
+    border-style: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 15px;
+
+    color: rgb(75,75,75);
+
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+    cursor: text;
+    outline: none;
+}
+
+input::placeholder {
+    color: #a7a7a7;
+}
+
+
+div.avatar {
+    float: left;
+    clear: none;
+    padding-right: 15px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-info {
+    float: left;
+    clear: none;
+}
+
+.user-name {
+    font-size: 16px;
+}
+
+.user-activity {
+    color: #666;
+    font-size: 12px;
+}
+
+div#messages {
+    -webkit-touch-callout-user-select: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -ms-user-select: text;
+    -O-user-select: text;
+
+    /*
+    z-index: -1;
+    */
+
+    overflow-x : hidden;
+    overflow-y : auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgb(225,220,220);
+}

@@ -1,0 +1,45 @@
+html,body {
+    overflow: hidden;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+#container
+{
+    margin: 0 auto;
+    height: 100%;
+    max-width: 970px;
+    display: grid;
+    grid-template-rows: 50px auto 62px;
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+}
+header, footer {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    width: 100%;
+    /*
+    content: "";
+    clear: both;
+    display: table;
+    */
+}
+
+footer {
+    /*
+    position: absolute;
+    bottom: 0px;
+    height: 62px;
+    */
+}

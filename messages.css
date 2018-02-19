@@ -1,0 +1,97 @@
+div.msg-group {
+    padding: 0 10%;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+div.msg-container, div.tail {
+    box-shadow: 0px 1px 0.5px rgba(0,0,0,0.2);
+}
+div.msg-container {
+    border-radius: 7.5px;
+    clear: both;
+    margin-bottom: 2px;
+    min-width: 100px;
+    max-width: 500px;
+    position: relative;
+}
+
+.msg-out div.msg-container:first-child {
+    border-top-right-radius: 0px;
+}
+.msg-out div.msg-container {
+    background-color: rgb(220,248,198);
+    float: right;
+}
+.msg-in div.msg-container:first-child {
+    border-top-left-radius: 0px;
+}
+.msg-in div.msg-container {
+    background-color: #fff;
+    float: left;
+}
+
+div.tail {
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    background-color: inherit;
+    display: none;
+}
+div.msg-container:first-child div.tail {
+    display: initial;
+}
+.msg-out div.tail {
+    right: -6px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 9px;
+}
+.msg-in div.tail {
+    left: -6px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 9px;
+}
+
+div.msg {
+    /*padding: 5px 50px 7px 9px;*/
+    /*padding: 5px 50px 9px 9px;*/
+    padding: 5px 9px 7px;
+    text-justify: normal;
+}
+
+div.msg span::after {
+    white-space: pre;
+}
+.msg-in div.msg span::after {
+    content: "        ";
+}
+.msg-out div.msg span::after {
+    content: "            ";
+}
+
+div.msg-info { 
+    position:absolute;
+    bottom: 3px;
+    right: 6px;
+
+    font-size: 10px;
+    color: #999;
+}
+
+.msg-info .status {
+    float: right;
+}
+.msg-info i {
+    margin-left: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.msg-info i[content="done"],
+.msg-info i[content="done_all"] {
+    font-size: 12px;
+}
+.status-seen {
+    color: rgb(100,170,215);
+}
+
