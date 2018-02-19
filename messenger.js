@@ -167,8 +167,8 @@ function dialogue() {
     m("Well, there is one thing...");
     w(1000);
     m("You remember when we were ill in Hong Kong? And we'd always have a " +
-      "bowl of hot congee to take our minds off it and make the time go by quicker?");
-    m("I'm really craving some congee right now");
+      "bowl of hot congee to take our minds off it and make the time go by?");
+    m("Really craving some congee right now");
     w(2000);
     t("wow really? can you not just make some yourself?")
     w(1000);
@@ -183,7 +183,7 @@ function dialogue() {
     t("actually i made some the other night")
     w(1000);
     m("what");
-    m("give me some");
+    m("give me some?");
     w(500);
     t("no")
     w(200);
